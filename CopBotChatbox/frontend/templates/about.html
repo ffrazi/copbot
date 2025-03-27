@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CopBotChatbox</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body> 
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="robot-icon">🤖</div>
+            <span>COPBOTCHATBOX - AI POLICE ASSISTANT</span>
+        </div>
+    </header>
+    <!-- Move Navigation Below -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">🏠 Home</a></li>
+                <li><a href="{{ url_for('chat') }}">💬 Chat</a></li>
+                <li><a href="{{ url_for('emergency') }}">🚨 Emergency</a></li>
+                <li><a href="{{ url_for('about') }}">ℹ About</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <div class="chat-container">
+        <h2><i class="fas fa-user-shield"></i> About CopBotChatbox</h2>
+        <p>CopBotChatbox is an AI-powered police assistance chatbot designed to provide instant help on legal issues, police procedures, and emergency response. It is built to enhance communication between citizens and law enforcement.</p>
+        <p>Our goal is to improve public safety and ensure quick access to necessary information.</p>
+    </div>
+</body>
+</html>

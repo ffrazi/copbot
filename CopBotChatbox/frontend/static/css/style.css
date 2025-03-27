@@ -1,0 +1,153 @@
+/* Import Google Fonts & Icons */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffffce; /* Light vibrant color */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    background: linear-gradient(90deg, #cd651b, #6a2200);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Animated Robot Icon */
+.robot-icon {
+    font-size: 40px;
+    display: inline-block;
+    animation: floatRobot 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff, 0 0 20px #ff4e50, 0 0 30px #ff4e50; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #1fddff, 0 0 40px #1fddff; }
+}
+
+@keyframes floatRobot {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Navigation Bar - Moved Below Header */
+.navbar {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin-top: 10px; /* Creates space below the header */
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00e6e6;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.navbar ul li a:hover {
+    color: #ffeb3b;
+    text-shadow: 0px 0px 10px rgba(255, 235, 59, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Chat Container */
+.chat-container {
+    width: 60%;
+    margin: 50px auto; /* Adjusted margin to prevent overlap */
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Chat Button */
+.chat-button {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #00e6e6;
+    color: black;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 230, 230, 0.5);
+}
+
+.chat-button:hover {
+    background: #ff9800;
+    transform: scale(1.08);
+}
+
+/* Animated Icons */
+.icon {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.logo {
+    background-image: url("../images/tamilnadu.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}

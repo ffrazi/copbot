@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CopBotChatbox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="robot-icon">🤖</div>
+            <span>COPBOTCHATBOX - AI POLICE ASSISTANT</span>
+        </div>
+    </header>
+
+    <!-- Move Navigation Below -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">🏠 Home</a></li>
+                <li><a href="{{ url_for('chat') }}">💬 Chat</a></li>
+                <li><a href="{{ url_for('emergency') }}">🚨 Emergency</a></li>
+                <li><a href="{{ url_for('about') }}">ℹ About</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="chat-container">
+        <h2><i class="fas fa-shield-alt"></i> Welcome to CopBotChatbox</h2>
+        <p>Your AI-powered police assistant. Get instant help and guidance.</p>
+        <button class="chat-button" onclick="window.location.href='chat.html'">
+            <i class="fas fa-comments"></i> Start Chat
+        </button>
+    </div>
+</body>
+</html>
